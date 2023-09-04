@@ -2,6 +2,7 @@ import express from "express";
 import { corsMiddleware } from "./middlewares/cors";
 import router from "./routes/routes";
 import { notFound } from "./middlewares/notFound";
+
 const app = express();
 
 app.use(express.json());

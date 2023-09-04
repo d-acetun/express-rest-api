@@ -1,6 +1,8 @@
+import { signToken } from "../helpers/jwt";
+
 class AuthModel {
-  static async login(email: string, password: string) {
-    return { token: "12345", email, password };
+  static async login(email: string, _password: string) {
+    return signToken({ name: "Diego", email });
   }
 }
 
