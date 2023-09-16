@@ -8,7 +8,7 @@ export const signToken = ({ name, email }: IUser) => {
       email,
     },
     "secret",
-    { expiresIn: 60 * 5 }
+    { expiresIn: 60 * 5 } // 5 min
   );
   return { token };
 };
